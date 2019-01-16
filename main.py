@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/main')
 def main():
-    content = md2html('static/doc/main.md')
+    content = md2html('static/mdfile/main.md')
     return render_template('markdown.html', **locals())
 
 
